@@ -46,4 +46,8 @@ Adjust the rule ID as necessary to match the alerts you wish to forward.
 
 ### 4. Setting Up the Subscriber
 
-To verify the operation of the integration and to observe the alerts, set up a subscriber script that listens for messages on the configured MQTT topics. A subscriber script can also be found in here; mqtt-integration/subscriberscript.py 
+To verify the operation of the integration and to observe the alerts, set up a subscriber script that listens for messages on the configured MQTT topics. A subscriber script can also be found in here; 
+
+```
+mqtt-integration/subscriberscript.py 
+```
