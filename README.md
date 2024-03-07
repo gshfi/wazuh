@@ -18,10 +18,10 @@ The integration requires the Paho MQTT library (version before 2.0.0). It must b
 
 ### 2. Creating the Custom Python Script
 
-A custom Python script is needed to publish alerts from Wazuh to an MQTT broker. A template script is available at the following URL:
+A custom Python script is needed to publish alerts from Wazuh to an MQTT broker. A template script is available here:
 
 ```
-https://github.com/gshfi/wazuh/blob/main/mqtt-integration/custom-mqtt.py
+mqtt-integration/custom-mqtt.py
 ```
 
 This script listens for alerts predefined in the ossec.conf file and publishes them to an MQTT broker.
@@ -46,4 +46,4 @@ Adjust the rule ID as necessary to match the alerts you wish to forward.
 
 ### 4. Setting Up the Subscriber
 
-To verify the operation of the integration and to observe the alerts, set up a subscriber script that listens for messages on the configured MQTT topics.
+To verify the operation of the integration and to observe the alerts, set up a subscriber script that listens for messages on the configured MQTT topics. A subscriber script can also be found in here; mqtt-integration/subscriberscript.py 
